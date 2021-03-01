@@ -5,7 +5,7 @@ import java.io.RandomAccessFile;
 public class Main {
     public static void main(String[] args) {
 
-        String path = "/Users/gennadyromanov/Documents/Metro/Clean_Enrich_Cardholder/Clean_Enrich_Cardholder[].json";
+        String path = "";
         int bufferSize = 1024 * 4;
 
         try {
