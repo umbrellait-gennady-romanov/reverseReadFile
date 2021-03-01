@@ -2,15 +2,13 @@ import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-public class EndFileBufferRead {
-
-    private static final int BUFFER_SIZE = 1024 * 4;
+public class EndFileRead {
 
     private RandomAccessFile in;
     public byte[] buffer;
     private long currentBufferPos;
 
-    public EndFileBufferRead(File file, int bufferSize) throws IOException {
+    public EndFileRead(File file, int bufferSize) throws IOException {
         in = new RandomAccessFile(file, "r");
         buffer = new byte[bufferSize];
         currentBufferPos = file.length() - bufferSize;
